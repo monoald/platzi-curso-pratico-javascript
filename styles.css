@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+    --main-background: #121f3d;
+    --secondary-background: #080c1c;
+    --header-background: #0d1733;
+    --white: #d9d2ce;
+    --main-green: #acea42;
+    --hover-green: #c1df8b;
+    --sm: 1.6rem;
+    --md: 1.8rem;
+    --lg: 2rem;
+}
+
+.header {
+    background-color: var(--header-background);
+    color: var(--white);
+    font-size: var(--sm);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--secondary-background);
+}
+
+.main {
+    background-color: var(--main-background);
+    color: var(--white);
+    width: 100%; 
+    text-align: center;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    position: relative;
+}
+.main__title {
+    font-size: var(--md);
+    color: var(--black);
+    position: absolute;
+    top: 28px;
+    width: 82%;
+}
+.main__container {
+    border: 1px solid var(--main-green);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 84%;
+}
+.forms-container {    
+    width: 100%;
+}
+.form {
+    height: auto;
+    width: 100%;
+    padding: 28px;
+    padding-bottom: 16px;
+}
+.form__title {
+    font-size: var(--md);
+    margin-bottom: 20px;
+}
+.input {
+    text-align: start;
+    font-size: var(--sm);
+}
+.input__entry {
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+    margin-top: 6px;
+    margin-bottom: 20px ;
+    background-color: var(--header-background);
+    border: 0;
+    color: var(--white);
+    padding: 0 15px;
+}
+.input__entry::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+.form__buttons {
+    padding-top: 14px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.button {
+    background-color: var(--main-green);
+    color: var(--secondary-background);
+    width: 108px;
+    padding: 5px;
+    height: 35px;
+    text-align: center;
+    border-radius: 10px;
+    border: 0;
+    margin-bottom: 12px;
+}
+.button:hover {
+    background-color: var(--hover-green);
+}
+.result {
+    height: 80px;
+    background-color: var(--secondary-background);
+    width: 100%;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+    font-size: var(--sm);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--main-green);
+}
