@@ -40,7 +40,11 @@ function calcularPerimetroCuadrado() {
 
     const perimetro = perimetroCuadrado(ladoCuadrado);
 
-    cuadradoResultado.innerHTML = `El diametro es: ${perimetro} cm`;
+    if ( isNaN(perimetro) ) {
+        cuadradoResultado.innerHTML = 'Ups! Parece que te falto anadir un valor <br>Intentalo de Nuevo!';
+    } else {
+        cuadradoResultado.innerHTML = `El diametro es: ${perimetro} cm`;       
+    }
 }
 
 function calcularAreaCuadrado() {
@@ -48,7 +52,11 @@ function calcularAreaCuadrado() {
 
     const area = areaCuadrado(ladoCuadrado);
 
-    cuadradoResultado.innerHTML = `El area es: ${area} cm<sup>2</sup>`;
+    if ( isNaN(area) ) {
+        cuadradoResultado.innerHTML = `Ups! Parece que te falto anadir un valor <br>Intentalo de Nuevo!`;
+    } else {
+        cuadradoResultado.innerHTML = `El area es: ${area} cm<sup>2</sup>`;
+    }
 }
 
 //  Funciones para enciar el resultado del triangulo al HTML
@@ -59,7 +67,11 @@ function calcularPerimetroTriangulo() {
 
     const perimetro = perimetroTriangulo(lado1, lado2, base);
 
-    trianguloResultado.innerHTML = `El perimetro es: ${perimetro} cm`
+    if ( isNaN(perimetro) ) {
+        trianguloResultado.innerHTML = `Ups! Parece que te falto anadir un valor <br>Intentalo de Nuevo!`;
+    } else {
+        trianguloResultado.innerHTML = `El perimetro es: ${perimetro} cm`
+    }
 }
 
 function calcularAreaTriangulo() {
@@ -68,7 +80,11 @@ function calcularAreaTriangulo() {
 
     const area = areaTriangulo(base, altura);
 
-    trianguloResultado.innerHTML = `El area es: ${area} cm<sup>2</sup>`
+    if ( isNaN(area) ) {
+        trianguloResultado.innerHTML = `Ups! Parece que te falto anadir un valor <br>Intentalo de Nuevo!`;
+    } else {
+        trianguloResultado.innerHTML = `El area es: ${area} cm<sup>2</sup>`
+    }
 }
 
 //  Funciones para enciar el resultado del circulo al HTML
@@ -77,7 +93,11 @@ function calcularDiametroCirculo() {
 
     const diametro = diametroCirculo(radio);
 
-    circuloResultado.innerHTML = `El diametro es: ${diametro} cm`
+    if ( isNaN(diametro) ) {
+        circuloResultado.innerHTML = `Ups! Parece que te falto anadir un valor <br>Intentalo de Nuevo!`;
+    } else {
+        circuloResultado.innerHTML = `El diametro es: ${diametro} cm`
+    }
 }
 
 function calcularAreaCirculo() {
@@ -85,7 +105,11 @@ function calcularAreaCirculo() {
 
     const area = areaCirculo(radio);
 
-    circuloResultado.innerHTML = `El area es: ${area.toFixed(2)} cm<sup>2</sup>`
+    if ( isNaN(area) ) {
+        circuloResultado.innerHTML = `Ups! Parece que te falto anadir un valor <br>Intentalo de Nuevo!`;
+    } else {
+        circuloResultado.innerHTML = `El area es: ${area.toFixed(2)} cm<sup>2</sup>`
+    }
 }
 
 function calcularCircunferenciaCirculo() {
@@ -93,5 +117,9 @@ function calcularCircunferenciaCirculo() {
 
     const circunferencia = circunferenciaCirculo(radio);
 
-    circuloResultado.innerHTML = `la circunferencia es: ${circunferencia.toFixed(2)} cm`
+    if ( isNaN(circunferencia) ) {
+        circuloResultado.innerHTML = `Ups! Parece que te falto anadir un valor <br>Intentalo de Nuevo!`;
+    } else {
+        circuloResultado.innerHTML = `la circunferencia es: ${circunferencia.toFixed(2)} cm`
+    }
 }
