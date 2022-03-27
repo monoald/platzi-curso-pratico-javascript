@@ -12,17 +12,37 @@
 </head>
 <body>
     <header class="header">
-
         <h1 class="header__title">Figuras Geometricas</h1>
-
     </header>
 
     <main class="main">
         <h2 class="main__title">Calcula el area y perimetro de una figura geometrica</h2>
 
-        <section class="main__container">
+        <section class="menu">
+            <ul class="menu__list">
+                <li>
+                    <a class="menu__item active" href="#" id="square" onclick="mostrarFormularioCuadrado()">
+                        <span>Cuadrado</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__item" href="#"  id="triangle" onclick="mostrarFormularioTriangulo()">
+                        <span>Triangulo</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="menu__item" href="#" id="circle" onclick="mostrarFormularioCirculo()">
+                        <span>Circulo</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card__container">
     
-            <section class="form-container">
+            <section class="form-container" id="square-form">
                 <form class="form">
                     <h3 class="form__title">Cuadrado</h3>
         
@@ -30,7 +50,7 @@
                         <div class="input">
                             <span>Tamano del lado: </span>
             
-                            <input type="number" class="input__entry SquareSide" id="square-entry">
+                            <input type="number" class="input__entry " id="square-side">
                         </div>
                     </label>
         
@@ -40,81 +60,91 @@
                         <input class="button" type="button" value="Area" onclick="calcularAreaCuadrado()">
                     </div>
                 </form>
+
+                <section class="result" id="square-result">
+                    <p class="result__text"></p>
+                </section>
             </section>
 
-            <section class="result" id="square-result">
-                <p class="result__text"></p>
+            <section class="form-container triangle-form" id="triangle-form">
+                <form class="form">
+                    <h3 class="form__title">Triangulo</h3>
+        
+                    <label for="TriangleSide1">
+                        <div class="input">
+                            <span>Tamano del lado 1: </span>
+            
+                            <input type="number" class="input__entry" id="triangle-side1">
+                        </div>
+                    </label>
+                    
+                    <label for="TriangleSide2">
+                        <div class="input">
+                            <span>Tamano del lado 2: </span>
+            
+                            <input type="number" class="input__entry" id="triangle-side2">
+                        </div>
+                    </label>
+        
+                    <label for="TriangleBase">
+                        <div class="input">
+                            <span>Tamano de la base: </span>
+            
+                            <input type="number" class="input__entry" id="triangle-base">
+                        </div>
+                    </label>
+        
+                    <label for="TriangleHeight">
+                        <div class="input">
+                            <span>Tamano de la altura: </span>
+            
+                            <input type="number" class="input__entry" id="triangle-height">
+                        </div>
+                    </label>
+        
+                    <div class="form__buttons">
+                        <input class="button" type="button" value="Perimetro" onclick="calcularPerimetroTriangulo()">
+            
+                        <input class="button" type="button" value="Area" onclick="calcularAreaTriangulo()">
+                    </div>
+                </form> 
+
+                <section class="result" id="triangle-result">
+                    <p class="result__text"></p>
+                </section>
+            </section>
+        
+            <section class="form-container circle-form" id="circle-form">
+                <form class="form">
+                    <h3 class="form__title">Circulo</h3>
+        
+                    <label for="CircleRadius">
+                        <div class="input">
+                            <span>Tamano del radio: </span>
+            
+                            <input type="number" class="input__entry" id="circle-radius">
+                        </div>
+                    </label>
+        
+                    <div class="form__buttons">
+                        <input class="button" type="button" value="Diametro" onclick="calcularDiametroCirculo()">
+        
+                        <input class="button" type="button" value="Area" onclick="calcularAreaCirculo()">
+            
+                        <input class="button" type="button" value="Circunferencia" onclick="calcularCircunferenciaCirculo()">
+            
+                    </div>
+                </form>
+
+                <section class="result" id="circle-result">
+                    <p class="result__text"></p>
+                </section>
             </section>
         </section>
         
-        <!-- <div class="form-container">
-            <form class="form">
-                <h3 class="form__title">Triangulo</h3>
-    
-                <label for="TriangleSide1">
-                    <div class="input">
-                        <span>Tamano del lado 1: </span>
-        
-                        <input type="number" class="input__entry" TriangleSide1" >
-                    </div>
-                </label>
-                
-                <label for="TriangleSide2">
-                    <div class="input">
-                        <span>Tamano del lado 2: </span>
-        
-                        <input type="number" class="input__entry" TriangleSide2" >
-                    </div>
-                </label>
-    
-                <label for="TriangleBase">
-                    <div class="input">
-                        <span>Tamano de la base: </span>
-        
-                        <input type="number" class="input__entry" TriangleBase" >
-                    </div>
-                </label>
-    
-                <label for="TriangleHeight">
-                    <div class="input">
-                        <span>Tamano de la altura: </span>
-        
-                        <input type="number" class="input__entry" TriangleHeight" >
-                    </div>
-                </label>
-    
-                <div class="form__buttons">
-                    <input class="button" type="button" value="Perimetro" onclick="calcularPerimetroTriangulo()">
-        
-                    <input class="button" type="button" value="Area" onclick="calcularAreaTriangulo()">
-                </div>
-            </form> 
-        </div>
-    
-        <div class="form-container">
-            <form class="form">
-                <h3 class="form__title">Circulo</h3>
-    
-                <label for="CircleRadius">
-                    <div class="input">
-                        <span>Tamano del radio: </span>
-        
-                        <input type="number" class="input__entry" CircleRadius" >
-                    </div>
-                </label>
-    
-                <div class="form__buttons">
-                    <input class="button" type="button" value="Diametro" onclick="calcularDiametroCuadrado()">
-    
-                    <input class="button" type="button" value="Area" onclick="calcularAreaCuadrado()">
-        
-                    <input class="button" type="button" value="Circunferencia" onclick="calcularCircunferenciaCuadrado()">
-        
-                </div>
-            </form>
-        </div>
-    </main> -->
+    </main>
 
     <script src="./figuras.js"></script>
+    <script src="./menu.js"></script>
 </body>
 </html>
