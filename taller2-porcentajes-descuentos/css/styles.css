@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+    --white: #d4d5d4;
+    --white-hover: #f5f5f7;
+    --black: #2b2a2d;
+    --grey: #bbb;
+    --blue: #0071e3;
+    --light-blue: #06c;
+    --sm: 1.2rem;
+    --md: 1.6rem;
+    --lg: 2.8rem;
+}
+
+/*-----------------HEADER---------------*/
+.header {
+    background-color: var(--black);
+    width: 100%;
+    height: 44px;
+    max-height: 44px;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar__list {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-bar__item {
+    height: 100%;
+    list-style: none;
+}
+.nav-bar__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--sm);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    text-align: center;
+}
+.nav-bar__link:hover {
+    color: var(--white-hover);
+}
+.nav-bar__logo {
+    width: 18px;
+    height: 18px;
+}
+.nav-bar__logo img{
+    width: 18px;
+    height: 18px;
+}
+.nav-bar__search-icon {
+    width: 15px;
+    height: 15px;
+}
+.nav-bar__search-icon img{
+    width: 15px;
+    height: 15px;
+}
+.nav-bar__cart-icon {
+    width: 18px;
+    height: 18px;
+}
+.nav-bar__cart-icon img{
+    width: 18px;
+    height: 18px;
+}
+
+/*-----------------MAIN---------------*/
+.main {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    place-items: center;
+    width: 100%;
+    background-color: white;
+}
+.main__title {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--black);
+    font-size: var(--lg);
+    padding: 0 20px;
+}
+.main__search {
+    height: 200px;
+    width: 100%;
+}
+
+/*-----------------FORM---------------*/
+.discount__form {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    place-items: center;
+    gap: 34px;
+}
+.input {
+    width: 320px;
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid var(--grey);
+    background-color: transparent;
+    font-size: var(--md);
+    color: var(--black);
+    padding: 0 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    display: grid;
+    grid-template-areas: "select";
+}
+.input::-webkit-inner-spin-button {
+    appearance: none;
+    -moz-appearance: none;
+}
+.button {
+    width: 120px;
+    height: 32px;
+    border: none;
+    border-radius: 18px;
+    background-color: var(--blue);
+    color: var(--white-hover);
+    font-size: 1.3rem;
+}
+.button:hover {
+    background-color: var(--light-blue);
+}

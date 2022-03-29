@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg" href="./img/apple-logo.svg">
+    <!-- <link rel="stylesheet" href="./tablet.css" media="screen and (min-width: 600px)"> -->
+    <title>Taller 2: Porcentajes y Descuentos</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <ul class="nav-bar__list">
+
+                <li class="nav-bar__item"> 
+                    <a href="#"  class="nav-bar__link">
+                        <figure class="nav-bar__logo">
+                            <img src="./img/apple-logo.svg" alt="Apple Logo">
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            Store
+                        </span>
+                    </a>
+                </li>
+                
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            Mac
+                        </span>
+                    </a>
+                </li>
+                
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            iPad
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            iPhone
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            Discount Calculator
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item"> 
+                    <a href="#"  class="nav-bar__link">
+                        <figure class="nav-bar__discount-icon">
+                            <img src="./img/icons8-interface-24.png" alt="Search">
+                        </figure>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item"> 
+                    <a href="#"  class="nav-bar__link">
+                        <figure class="nav-bar__cart-icon">
+                            <img src="./img/icons8-shopping-bag-32 (1).png" alt="Cart">
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="main">
+        <h1 class="main__title">Calculate a discount for a product</h1>
+
+        <section class="main__discount discount">
+
+            <form action="" class="discount__form">
+
+                <label class="discount__product product" for="product-menu" id="product">
+                    <!-- <span>Select your prduct:</span> -->
+    
+                    <select name="courses" class="input" id="product-menu" form="product">
+                        <option value="">Product</option>
+
+                        <option value="JavaScript">JavaScript</option>
+    
+                        <option value="HTML5">HTML5</option>
+    
+                        <option value="CSS3">CSS3</option>
+    
+                        <option value="Web Standards">Web Standards</option>
+                    </select>
+                </label>
+    
+                <label class="discount__percentage discount" for="percentage">
+                    <!-- <span>Select your discount:</span> -->
+
+                    <input type="number" name="discount" class="input" id="percentage" placeholder="Discount">
+                    
+                </label>
+
+                <div class="discount__button">
+                    <input type="button" value="Add discount" class="button">
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="main__product product">
+
+        </section>
+    </main>
+
+    <!-- <script src="./js/descuentos.js"></script> -->
+</body>
+</html>
