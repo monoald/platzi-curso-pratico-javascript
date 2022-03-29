@@ -21,6 +21,7 @@ body {
     --light-blue: #06c;
     --sm: 1.2rem;
     --md: 1.6rem;
+    --md-2: 2.2rem;
     --lg: 2.8rem;
 }
 
@@ -64,23 +65,6 @@ body {
 .logo {
     display: flex;
 }
-/* .nav-bar__item {
-    height: 100%;
-    list-style: none;
-}
-.nav-bar__link {
-    color: var(--white);
-    text-decoration: none;
-    font-size: var(--sm);
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 12px;
-    text-align: center;
-}
-.nav-bar__link:hover {
-    color: var(--white-hover);
-} */
 .logo__icon {
     width: 20px;
     height: 20px;
@@ -89,14 +73,6 @@ body {
     width: 20px;
     height: 20px;
 }
-/* .nav-bar__search-icon {
-    width: 16px;
-    height: 16px;
-}
-.nav-bar__search-icon img{
-    width: 16px;
-    height: 16px;
-} */
 .cart {
     display: grid;
 }
@@ -126,11 +102,17 @@ body {
     font-size: var(--lg);
     padding: 0 20px;
 }
-.main__search {
-    height: 200px;
+.main__discount {
     width: 100%;
+    padding-bottom: 100px;
 }
-
+.main__product {
+    width: 100%;
+    border-top: 2px solid var(--grey);
+    padding: 100px 0;
+    display: grid;
+    place-items: center;
+}
 /*-----------------FORM---------------*/
 .discount__form {
     display: grid;
@@ -169,4 +151,63 @@ body {
 }
 .button:hover {
     background-color: var(--light-blue);
+}
+
+/* ----------------CARD-------------- */
+
+.product__container {
+    width: 60%;
+    display: grid;
+    grid-template-rows: auto 1fr auto auto auto;
+    place-items: center;
+    border-radius: 18px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 16%);
+    padding: 40px;
+    transition: all .3s cubic-bezier(0,0,.5,1);
+}
+.product__container:hover {
+    box-shadow: 2px 4px 16px rgb(0 0 0 / 28%);
+    transform: scale3d(1.01,1.01,1.01);
+}
+.product__header {
+    width: 100%;
+    text-align: start;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+.product__name {
+    font-size: var(--lg);
+}
+.product__image {
+    width: 90%;
+}
+.product__image img {
+    width: 100%;
+    object-fit: cover;
+}
+.product__colors {
+    height: 44px;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--black);
+}
+.product__prices {
+    width: 66%;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    font-size: var(--md);
+    text-align: start;
+}
+.product__button {
+    margin: 22px 0;
 }
