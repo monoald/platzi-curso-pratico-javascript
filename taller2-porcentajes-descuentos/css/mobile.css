@@ -17,8 +17,11 @@ body {
     --white-hover: #f5f5f7;
     --black: #2b2a2d;
     --grey: #bbb;
+    --grey-bg: #f5f5f7;
     --blue: #0071e3;
     --light-blue: #06c;
+    --product-color-1: #afb2b5;
+    --product-color-2: #e0e1e0;
     --sm: 1.2rem;
     --md: 1.6rem;
     --md-2: 2.2rem;
@@ -91,7 +94,7 @@ body {
     grid-template-rows: 1fr auto auto;
     place-items: center;
     width: 100%;
-    background-color: white;
+    background-color: var(--grey-bg);
 }
 .main__title {
     height: 200px;
@@ -164,6 +167,7 @@ body {
     box-shadow: 2px 4px 12px rgb(0 0 0 / 16%);
     padding: 40px;
     transition: all .3s cubic-bezier(0,0,.5,1);
+    background-color: white;
 }
 .product__container:hover {
     box-shadow: 2px 4px 16px rgb(0 0 0 / 28%);
@@ -179,26 +183,41 @@ body {
 .product__name {
     font-size: var(--lg);
 }
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 264px;
+    max-height: 264px;
+    padding-top: 28px;
+}
 .product__image {
-    width: 90%;
+    width: 100%;
+    height: 100%;
 }
 .product__image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .product__colors {
-    height: 44px;
+    height: 66px;
     display: flex;
     gap: 8px;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
+.product__colors .circle:first-child {
+    background-color: var(--product-color-1);
+}
+.product__colors .circle:last-child {
+    background-color: var(--product-color-2);
+}
 .circle {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
-    background-color: var(--black);
 }
 .product__prices {
     width: 66%;

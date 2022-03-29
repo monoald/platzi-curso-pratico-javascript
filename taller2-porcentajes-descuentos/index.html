@@ -102,15 +102,19 @@
                     <!-- <span>Select your prduct:</span> -->
     
                     <select name="courses" class="input" id="product-menu" form="product">
-                        <option value="">Product</option>
+                        <!-- <option value="">Product</option> -->
 
-                        <option value="JavaScript">JavaScript</option>
+                        <option value="MacBook Air">MacBook Air</option>
     
-                        <option value="HTML5">HTML5</option>
+                        <option value='MacBook Pro 16"'>MacBook Pro 16"</option>
     
-                        <option value="CSS3">CSS3</option>
+                        <option value="iPhone 13 Pro">iPhone 13 Pro</option>
+
+                        <option value="iPhone 12">iPhone 12</option>
     
-                        <option value="Web Standards">Web Standards</option>
+                        <option value="iPad Pro">iPad Pro</option>
+
+                        <option value="iPad mini">iPad mini</option>
                     </select>
                 </label>
     
@@ -134,23 +138,25 @@
             <div class="product__container">
 
                 <section class="product__header">
-                    <h2 class="product__name">MacBookAir</h2>
+                    <h2 class="product__name" id="product__name">MacBook Air</h2>
 
-                    <h2 class="product__discounts"></h2>
+                    <h2 class="product__discount" id="product__discount"></h2>
                 </section>
 
-                <figure class="product__image">
-                    <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-40-macbook-air-202110?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1633726242000" alt="">
-                </figure>
+                <div class="image-container">
+                    <figure class="product__image">
+                        <img id="product__image" src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-card-40-macbook-air-202110?wid=600&hei=500&fmt=p-jpg&qlt=95&.v=1633726242000" alt="">
+                    </figure>
+                </div>
 
                 <div class="product__colors">
                     <span class="circle"></span>
-                    <span class="circle"></span>
+
                     <span class="circle"></span>
                 </div>
 
                 <section class="product__prices price">
-                    <p class="product__price">$999</p>
+                    <p class="product__price" id="product__price">$ 999</p>
 
                     <p class="price__discount"></p>
                 </section>
@@ -161,6 +167,7 @@
         </section>
     </main>
 
-    <!-- <script src="./js/descuentos.js"></script> -->
+    <script src="./js/product-menu.js"></script>
+    <script src="./js/descuentos.js"></script>
 </body>
 </html>
