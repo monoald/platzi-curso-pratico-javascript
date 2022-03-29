@@ -1,0 +1,32 @@
+.nav-bar__list {
+    justify-content: space-around;
+}
+.nav-bar__item {
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+.nav-bar__link {
+    color: var(--white);
+    text-decoration: none;
+    font-size: var(--sm);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    text-align: center;
+}
+.nav-bar__link:hover {
+    color: var(--white-hover);
+}
+.menu {
+    display: none;
+}
+.search__icon {
+    width: 16px;
+    height: 16px;
+}
+.search__icon img{
+    width: 16px;
+    height: 16px;
+}
