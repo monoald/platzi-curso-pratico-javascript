@@ -32,3 +32,33 @@
     width: 16px;
     height: 16px;
 }
+
+/*------------------------------------------MAIN---------------------------*/
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main__title {
+    width: 100%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+}
+.main__discount {
+    width: 50%;
+    order: 2;
+}
+.main__product {
+    width: 50%;
+    order: 3;
+    border-top: none;
+    border-left: 1px solid var(--grey);
+    padding-top: 0;
+}
+
+/*-------------------------------------------CARD-------------------------*/
+
+.product__container {
+    max-width: 428px;
+}

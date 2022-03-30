@@ -66,7 +66,47 @@
                 <li class="nav-bar__item">
                     <a href="#"  class="nav-bar__link">
                         <span>
+                            Watch
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            AirPods
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            Only on Apple
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            Accesories
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
                             Discount Calculator
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-bar__item">
+                    <a href="#"  class="nav-bar__link">
+                        <span>
+                            Suport
                         </span>
                     </a>
                 </li>
@@ -117,16 +157,30 @@
                         <option value="iPad mini">iPad mini</option>
                     </select>
                 </label>
-    
-                <label class="discount__percentage discount" for="percentage">
+                
+                <label for="discount">
                     <!-- <span>Select your discount:</span> -->
+                    <div class="discount__container">
+                        <input type="number" name="discount" class="input" id="discount" placeholder="Discount">
 
-                    <input type="number" name="discount" class="input" id="percentage" placeholder="Discount">
+                        <figure class="discount__icon">
+                            <!-- <img src="./img/icons8-percentage-30.png" alt="percent icon"> -->
+                            <span class="discount__text">%  off</span>
+                        </figure>
+                    </div>
                     
                 </label>
 
+                <section class="dicount__coupon coupon">
+                    <p id="coupon__text" class="coupon__text">Have a coupon?</p>
+
+                    <label id="coupon__section" class="coupon__input" for="coupon">
+                        <input type="text" placeholder="Coupon" class="input" id="coupon" autocomplete="off">
+                    </label>
+                </section>
+
                 <div class="discount__button">
-                    <input type="button" value="Add discount" class="button">
+                    <input type="button" value="Add discount" class="button" id="button">
                 </div>
 
             </form>
@@ -156,9 +210,12 @@
                 </div>
 
                 <section class="product__prices price">
-                    <p class="product__price" id="product__price">$ 999</p>
+                    <div class="price__original">
+                        <span>$ </span>
+                        <p id="product__price">999</p>
+                    </div>
 
-                    <p class="price__discount"></p>
+                    <p class="price__discount" id="price__discount"></p>
                 </section>
 
                 <button type="submit" class="product__button button">Buy</button>
@@ -168,6 +225,7 @@
     </main>
 
     <script src="./js/product-menu.js"></script>
+    <script src="./js/coupon.js"></script>
     <script src="./js/descuentos.js"></script>
 </body>
 </html>

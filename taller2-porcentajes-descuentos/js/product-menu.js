@@ -48,7 +48,7 @@ const productName = document.getElementById("product__name");
 const productImage = document.getElementById("product__image");
 const productPrice = document.getElementById("product__price");
 
-//  Menu product selected
+//  Menu input product selected
 const productSelection = document.getElementById("product-menu");
 
 //  Event listener
@@ -61,5 +61,8 @@ function changeProduct(){
 
     productName.innerHTML = selectedProduct.name;
     productImage.setAttribute("src", selectedProduct.image);
-    productPrice.innerHTML = `$ ${selectedProduct.price}`;
+    productPrice.innerHTML = selectedProduct.price;
+
+    productDiscount.innerHTML = "";
+    priceDiscount.innerHTML = "";
 }
