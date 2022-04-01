@@ -118,6 +118,10 @@ html {
     height: 66px;
     margin-top: 20px;
     background-color: var(--black-2);
-    /* border-bottom-left-radius: 14px;
-    border-bottom-right-radius: 14px; */
+    color: var(--white-2);
+    font-size: var(--sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }

@@ -5,7 +5,7 @@ function calculateAverage(list) {
     
     //  Get the addition of every element on an array
     let average = list.reduce( (accumulated = 0, actualValue) => {
-        return accumulated += actualValue;
+        return accumulated += Number(actualValue);
     });
 
     //  Divide the result by the length of the array
@@ -37,7 +37,7 @@ function calculateMedian(originalList) {
         //  Get the average of the two middle elements
         const middleAverage = ( list[listMiddle - 1] + list[listMiddle] ) / 2;
 
-        median = middleAverage;
+        median = middleAverage.toFixed(2);
 
     } else {
 
@@ -68,14 +68,7 @@ function calculateMode(list) {
     listCount.sort( ( a,b ) => b[1] - a[1] );
 
     //  Get the mode, even if the mode is more than 1 element
-    mode = listCount.filter( element => element[1] == listCount[0][1]);
-
-    console.log(listCount);     
-
-    //  Print mode
-    mode.forEach(element => {
-        console.log(`the mode is element ${element[0]} it appears ${element[1]} times.`);
-    });
+    mode = listCount.filter( element => element[1] == listCount[0][1]);  
 
     return mode;
 }
