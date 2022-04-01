@@ -4,10 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promedio</title>
+    <title>Average, median & mode</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>Promedio</h1>
+    <header class="header">
+        <figure class="header__return-icon icon">
+            <img src="./img/icons8-back-50.png" alt="back">
+        </figure>
+
+        <h1 class="header__title">Average Calculator</h1>
+
+        <figure class="header__menu-icon icon">
+            <img src="./img/icons8-hamburger-menu-30.png" alt="menu">
+        </figure>
+    </header>
+
+    <main class="main">
+
+        <section class="card">
+            <div class="card__container">
+
+                <h2 class="card__title">Calculate</h2>
+
+                <form action="" class="card__form">
+                    <label for="values">
+                        <div class="input-container">
+                            <span class="card__subtitle">Enter your values:</span>
+    
+                            <input type="text" id="values" class="card__input" placeholder="10, 12, 11, 9...">
+                        </div>
+                    </label>
+
+                    <div class="card__buttons">
+                        <input type="button" id="average" class="button" value="Average">
+    
+                        <input type="button" id="average" class="button" value="Median">
+    
+                        <input type="button" id="average" class="button" value="Mode">
+                    </div>
+
+                </form>
+
+                <section class="card__output">
+                    <p id="result">a</p>
+                </section>
+
+            </div>
+        </section>
+
+    </main>
 
     <script src="./js/functions.js"></script>
 </body>
