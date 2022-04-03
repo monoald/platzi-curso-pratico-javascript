@@ -1,0 +1,32 @@
+/*--------------------------------------------------MAIN---------------------------------*/
+
+.main {
+
+}
+.main__title {
+    width: 100%;
+    order: 1;
+}
+.input {
+    width: 50%;
+    order: 2;
+}
+.output {
+    width: 50%;
+    order: 3;
+}
+
+/*--------------------------------------------------CARD---------------------------------*/
+
+.card {
+    height: 298px;
+}
+.input .card__container {
+    justify-content: center;
+}
+.form__button {
+    margin-top: 20px;
+}
+.card__output {
+    margin-top: 20px;
+}
