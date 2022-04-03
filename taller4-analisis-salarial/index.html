@@ -4,11 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Salaries</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>Salary Analysis</h1>
+    <header class="header">
+        <nav class="header__nav-bar nav-bar">
+            <ul class="nav-bar__list">
+
+                <li class="nav-bar__item">
+                    <figure class="nav-bar__icon nav-bar__icon--active">
+                        <img src="./img/icons8-back-50.png" alt="back">
+                    </figure>
+                </li>
+
+                <li class="nav-bar__item">
+                    <figure class="nav-bar__icon">
+                        <img src="./img/icons8-calculator-64.png" alt="logo of a calculator">
+                    </figure>
+                </li>
+
+                <li class="nav-bar__item">
+                    <figure class="nav-bar__icon nav-bar__icon--active">
+                        <img src="./img/icons8-hamburger-menu-50.png" alt="menu">
+                    </figure>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <h1 class="main__title">Salary Analysis</h1>
+
+        <section class="main__card card">
+            <div class="card__container">
+
+                <h2 class="card__title">Select your file</h2>
+
+                <form action="" class="card__form form">
+
+                    <div class="form__file">
+                        <p>selected file:</p>
+                        <p>salaries.csv</p>
+                    </div>
+
+                    <input type="button" class="form__button" id="button" value="Analyze">
+                </form>
+
+            </div>
+        </section>
+
+        <section class="main__card card">
+            <div class="card__container">
+                
+                <h2 class="card__title">Results:</h2>
+
+                <p class="card__output" id="result"></p>
+            </div>
+
+        </section>
+
+    </main>
 
     <script src="./js/salaries.js"></script>
     <script src="./js/analysis.js"></script>
