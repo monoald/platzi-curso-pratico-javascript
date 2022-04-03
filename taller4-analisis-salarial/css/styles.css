@@ -19,7 +19,7 @@ body {
     --onix: #3D3D3D;
     --silver: #C2C2C2;
     --light-gray: #D6D6D6;
-    --sm: 1.4rem;
+    --sm: 1.2rem;
     --md: 2rem;
     --lg: 2.8rem;
 }
@@ -141,4 +141,5 @@ body {
 .card__output {
     height: 44px;
     text-align: center;
+    font-size: var(--sm);
 }

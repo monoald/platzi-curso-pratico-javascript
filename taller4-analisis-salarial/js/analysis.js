@@ -38,6 +38,8 @@ function calculateMedian(list) {
     return median;
 }
 
+//----------------------------------------ANALYZE SALARY-----------------------------------------
+
 function analyzeSalary(originaList) {
     
     //  Copy the original array to a new
